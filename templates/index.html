@@ -1,0 +1,232 @@
+{% extends 'layout.html' %}
+{% block index %}
+<!-- ======= Header ======= -->
+ <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+       <a href="/" class="logo me-auto me-lg-0"><img src="static/img/logo.png" alt="" class="img-fluid"></a>
+       <h1 class="logo me-auto"><a href="/">Input <span>Agri Farmers </span></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li class="dropdown"><a href="about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+          </li>
+          <li><a href="services">Services</a></li>
+          <li class="dropdown"><a href="product"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="animals">Animal Feeds</a></li>
+                <li><a href="farm">Farm Inputs</a></li>
+              </ul>
+            </li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="https://www.instagram.com/?next=%2F" class="instagram"><i class="bu bi-instagram"></i></a>
+        <!-- <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a> -->
+      </div>
+    </div>
+  </header><!-- End Header -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(static/img/slide/all.png);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to <span>Inputs Agri-Farmers Limited</span></h2>
+              <p>We produce and delivers freely high quality agriculture inputs to our customers.Because we believe for a farmer to succeed quality inputs that are affordable by every farmers are the key to unlock the potential in agriculture.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slideTwo.png);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>We produce high quality Livestock inputs</h2>
+              <p>Ranging from cows,pigs,poultry and other domestic animals our poduct have the right technical consistense of mineral,vitamins and trace elements to provide full suplements to animal feeds</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slideThree.png);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>We deliver next to you</h2>
+              <p>We offer the free delivery of our products directly door to door to our customer across all Tanzania regions.Because we prioritize speed and efficiency for our customer.With well assurance of the timely arrival of our products</p>
+            </div>
+          </div>
+        </div> 
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2>Revolutionizing Agriculture with High-Quality Inputs</h2>
+            <h3>Inputs Agri-Farmers Limited - Sustainable Solutions for Farmers Across Tanzania</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <p>
+              Inputs Agri-Farmers Limited is a fast-growing agriculture and livestock inputs company established in 2019, with operations in all parts of Tanzania
+            </p>
+            <p>
+              At Inputs Agri-Farmers Limited, we are dedicated to provide our clients with the best possible products and services. We are a team of experienced professionals who have a deep understanding of the agriculture industry. Our goal is to help farmers achieve their full potential by providing them with high-quality inputs and customized solutions that meet their unique needs.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>We offers a wide range of high-quality agriculture inputs</li>
+              <li><i class="ri-check-double-line"></i>We are dedicated to revolution of the agriculture industry</li>
+              <li><i class="ri-check-double-line"></i>We strives to provide exceptional customer service and support</li>
+            </ul>
+            <p class="fst-italic">
+              We are proud of our accomplishments so far, and we are excited about the future of Inputs Agri-Farmers Limited. We are committed to helping farmers achieve their full potential, and we look forward to continuing to grow and expand our operations in the years to come
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <img src="static/img/services/s1.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Manufacturing of agriculture products</a></h4>
+              <p>Inputs Agri-Farmers Limited produces a wide range of high-quality agriculture inputs such as fertilizers and livestock feeds. We use the latest technology and sustainable practices to ensure that our products promote healthy soil and plant growth. Our team of experienced professionals is dedicated to research and development to offer innovative and customized solutions that meet the unique needs of our clients</p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+            <img src="static/img/services/s2.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Distribution of agriculture products</a></h4>
+              <p>At Inputs Agri-Farmers Limited, we supply our clients with the best possible agriculture inputs available. We work closely with our clients to understand their specific needs and offer customized solutions that meet their unique requirements. Our distribution network is strategically designed to ensure timely delivery of our products, regardless of the location of the client.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <img src="static/img/services/s3.png" class="card-img-top" alt="Product 2">
+              <h4><a href="">Support and advice to our Clients</a></h4>
+              <p>Our commitment to our clients doesn't end with the production and supply of our products. We understand that each farm is unique and has its own set of challenges. We offer our clients support and advice on how to get the most out of our products. Our experienced team is available to offer technical support, training, and advice on best practices to ensure our clients' success</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <!-- <div class="card mb-4 shadow-sm"> -->
+              <img src="static/img/portfolio/superFeed.png" class="card-img-top" alt="Product 1">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Super Feed</h5> -->
+                <p class="card-text">Super Feed is a water soluble compound foliar fertilizer and plant. Booster is especially formulated with chelated Micro-Nutrients for fast and effective absorption</p>
+                <a href="#" class="btn btn-success" onclick="superFeed('Super Feed', 'Super Feed is a water soluble compound foliar fertilizer and plant. Booster is especially formulated with chelated Micro-Nutrients for fast and effective absorption. Super Feed provides the supplementary feeding of a well balanced fertilizer under the heavy cropping condition and includes quick recovery from unfavourable climatic condition')">View More</a>
+              </div>
+              <!-- </div> -->
+              </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <!-- <div class="card mb-4 shadow-sm"> -->
+              <img src="static/img/portfolio/pigBoost.png" class="card-img-top" alt="Product 2">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Pig Boost</h5> -->
+                <p class="card-text">Inputs Agri Pigboost is a balanced nutritional formula both vitamins,minerals and amino acids required for health growth of pigs.PigBoost promotes fast growth to acheive desired slaughter weight of 60-70kg</p>
+                <a href="#" class="btn btn-success" onclick="pigBoost('PigBoost', 'Inputs Agri-Farmers Pigboost is a balanced nutritional formula with both vitamins,minerals and amino acids required for health growth of pigs.PigBoost contains the Olaquindox whcih promotes fast growth to acheive desired slaughter weight of 60-70kg. It contains a special mixture for every type of pig with a suitable chemical composition of important minerals')">View More</a>
+              </div>
+              <!-- </div> -->
+              </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <!-- <div class="card mb-4 shadow-sm"> -->
+              <img src="static/img/portfolio/lyrXtr.png" class="card-img-top" alt>
+                <div class="card-body">
+                <!-- <h5 class="card-title">Layers Extra & Growers Premix</h5> -->
+                <p class="card-text">A magic product from Inputs Agri-Farmers which is essential for improving the quality and production of eggs in poultry</p>
+                <a href="#" class="btn btn-success" onclick="layersExtra('Layers Extra & Growers Premix', 'A magic product from Inputs Agri-Farmers which is essential for improving the quality and production of eggs in poultry'
+                )">View More</a>
+              </div>
+              <!-- </div> -->
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <!-- <div class="card mb-4 shadow-sm"> -->
+            <div class="card h-100">
+              <img src="static/img/portfolio/milkBooster.png" class="card-img-top" alt="Product 1">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Milk Booster</h5> -->
+                <p class="card-text">Milk Booster is the essential balanced combination of minerals,vitamins and trace elements for lactating cows,pregnant cows,heifers calves and bulls which can be used all year around.</p>
+                <a href="#" class="btn btn-success" onclick="milkBooster('Milk Booster', 'Milk Booster is the essential balanced combination of minerals,vitamins and trace elements for lactating cows,pregnant cows,heifers calves and bulls which can be used all year around')">View More</a>
+              </div>
+              <!-- </div> -->
+              </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <!-- <div class="card mb-4 shadow-sm"> -->
+              <div class="card h-100">
+                <img src="static/img/portfolio/superK.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Booster Extra Super K</h5> -->
+                  <p class="card-text">Booster Extra Super K is a liquid foliar fertilizer which is sprayed in leafes of all types of crops. It increases important nutrients of different types.It has high penetration rate to the roots over half an hour</p>
+                  <a href="#" class="btn btn-success" onclick="boosterExtraSuper('Booster Extra Super K', 'Booster Extra Super K is a liquid foliar fertilizer which is sprayed in leafes of all types of crops. It increases important nutrients of different types.It has high penetration rate to the roots over half an hour')">View More</a>
+                </div>
+                </div>
+            <!-- </div> -->
+          </div>
+          <div class="col-md-4 mb-3">
+            <!-- <div class="card mb-4 shadow-sm"> -->
+              <div class="card h-100">
+                <img src="static/img/portfolio/extraKijani.png" class="card-img-top" alt>
+                  <div class="card-body">
+                  <!-- <h5 class="card-title">Booster Extra Kijani</h5> -->
+                  <p class="card-text">Booster Extra Kijani is the liquid foliar fertilizer sprayed to leaves of all types of crops.It is suitable for all stages of growth of a plant</p>
+                  <a href="#" class="btn btn-success" onclick="boosterExtraKijani('Booster Extra Kijani', 'Booster Extra Kijani is the liquid foliar fertilizer sprayed to leaves of all types of crops.It is suitable for all stages of growth of a plant'
+                  )">View More</a><br><br>
+                  <a href="product" class="btn btn-success">SEE MORE PRODUCTS</a>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>               <!-- End Portfolio Section-->
+</main><!-- End #main -->
+{% endblock %}
