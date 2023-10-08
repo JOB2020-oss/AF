@@ -3,7 +3,7 @@ charset-normalizer==2.1.1
 click==8.1.7
 colorama==0.4.6
 et-xmlfile==1.1.0
-Flask==3.0.0
+Flask
 gunicorn==21.2.0
 idna==3.4
 itsdangerous==2.1.2
